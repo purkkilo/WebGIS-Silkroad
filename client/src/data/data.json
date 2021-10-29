@@ -1,0 +1,1160 @@
+{
+  "roads": [
+    {
+      "id": 0,
+      "isHidden": false,
+      "name": "The Silk Roads across the Middle East and Western Asia",
+      "color": "#6661ee",
+      "cities": [
+        {
+          "name": "Constantinople, ancient Byzantium, (now Istanbul)",
+          "label": "Istanbul, Fatih, Istanbul, Marmara Region, 34126, Turkki",
+          "lat": 41.0096334,
+          "lng": 28.9651646
+        },
+        {
+          "name": "Taraklı, Turkey",
+          "label": "Taraklı, Sakarya, Marmara Region, Turkki",
+          "lat": 40.422741349999995,
+          "lng": 30.48094616277571
+        },
+        {
+          "name": "Mudurnu, Turkey",
+          "label": "Mudurnu, Bolu, Black Sea Region, Turkki",
+          "lat": 40.4656959,
+          "lng": 31.2112312
+        },
+        {
+          "name": "Beypazarı, Turkey",
+          "label": "Beypazarı, Ankara, Central Anatolia Region, 06000, Turkki",
+          "lat": 40.1787094,
+          "lng": 31.90908764823292
+        },
+        {
+          "name": "Trabzon, Turkey",
+          "label": "Trabzon, Çarşı Mahallesi, Ortahisar, Trabzon, Black Sea Region, 61110, Turkki",
+          "lat": 41.0062202,
+          "lng": 39.7257547
+        },
+        {
+          "name": "Batumi, Georgia",
+          "label": "Batumi, Adlia, Autonomous Republic of Adjara, Georgia",
+          "lat": 41.6509502,
+          "lng": 41.6360085
+        },
+        {
+          "name": "Poti, Georgia",
+          "label": "Poti, Samegrelo-Upper Svaneti, 4400, Georgia",
+          "lat": 42.141614,
+          "lng": 41.6748028
+        },
+        {
+          "name": "Tbilisi, Georgia",
+          "label": "Tbilisi, Georgia",
+          "lat": 41.6934591,
+          "lng": 44.8014495
+        },
+        {
+          "name": "Shamakhi, Azerbaijan",
+          "label": "Şamaxı, Shamakhi District, Mountainous Shirvan, Azerbaidžan",
+          "lat": 40.6346094,
+          "lng": 48.6364107
+        },
+        {
+          "name": "Baku, Azerbaijan",
+          "label": "Baku, Yasamal Raion, Baku City, Absheron, Azerbaidžan",
+          "lat": 40.3754434,
+          "lng": 49.8326748
+        },
+
+        {
+          "name": "Barda, Azerbaijan",
+          "label": "Barda, Barda District, Aran, Azerbaidžan",
+          "lat": 40.3812457,
+          "lng": 47.1246287
+        },
+
+        {
+          "name": "Yerevan, Armenia",
+          "label": "Jerevan, 0010, Armenia",
+          "lat": 40.1776245,
+          "lng": 44.5126174
+        },
+        {
+          "name": "Tabriz, Iran",
+          "label": "Tabriz, بخش مرکزی شهرستان تبریز, Tabriz County, East Azerbaijan Province, Iran",
+          "lat": 38.0739964,
+          "lng": 46.2961952
+        },
+        {
+          "name": "Zanjan, Iran",
+          "label": "Zanjan Province, Iran",
+          "lat": 36.515854,
+          "lng": 48.4777616
+        },
+        {
+          "name": "Rasht, Iran",
+          "label": "Rasht, بخش مرکزی شهرستان رشت, Rasht County, Gilan Province, Iran",
+          "lat": 37.2793607,
+          "lng": 49.5846102
+        },
+        {
+          "name": "Qazvin, Iran",
+          "label": "Qazvin Province, Iran",
+          "lat": 36.0156291,
+          "lng": 49.8398161
+        },
+        {
+          "name": "Rey, Tehran, Iran",
+          "label": "Rey, Teheran, بخش مرکزی شهرستان ری, Rey County, Teheran, Iran",
+          "lat": 35.5989911,
+          "lng": 51.4357865
+        },
+        {
+          "name": "Qumis (Hecatompylos), Iran",
+          "label": "Qumi's Crescent, Tshwane Ward 70, City of Tshwane Metropolitan Municipality, Gauteng, 0014, Etelä-Afrikka",
+          "lat": 35.951056,
+          "lng": 54.112806
+        },
+        {
+          "name": "Sabzevar, Iran",
+          "label": "Sabzevar, بخش مرکزی شهرستان سبزوار, Sabzevar County, Razavi Khorasan, Iran",
+          "lat": 36.2134053,
+          "lng": 57.6808799
+        },
+        {
+          "name": "Nishapur, Iran",
+          "label": "Neyshabur, Neyshabur City, بخش مرکزی شهرستان نیشابور, Neyshabur County, Razavi Khorasan, 9313833138, Iran",
+          "lat": 36.210595,
+          "lng": 58.7922805
+        },
+        {
+          "name": "Mashhad, Iran",
+          "label": "Mašhad, بخش مرکزی شهرستان مشهد, Mashhad County, Razavi Khorasan, Iran",
+          "lat": 36.2974945,
+          "lng": 59.6059232
+        },
+        {
+          "name": "Tus, Iran",
+          "label": "Toos, Mašhad, بخش مرکزی شهرستان مشهد, Mashhad County, Razavi Khorasan, Iran",
+          "lat": 36.4833014,
+          "lng": 59.5169387
+        },
+        {
+          "name": "Bam, Iran",
+          "label": "Bam, Bakhsh-e Markazi of Bam County, Bam County, Kerman Province, 76618811, Iran",
+          "lat": 29.1059864,
+          "lng": 58.3565663
+        },
+        {
+          "name": "Yazd, Iran",
+          "label": "Yazd Province, Iran",
+          "lat": 32.0406164,
+          "lng": 54.6657189
+        },
+        {
+          "name": "Hamadan, Iran",
+          "label": "Hamadan Province, Iran",
+          "lat": 34.973321,
+          "lng": 48.6555779
+        },
+        {
+          "name": "Kermanshah, Iran",
+          "label": "Kermanshah Province, Iran",
+          "lat": 34.3789744,
+          "lng": 46.7010122
+        },
+
+        {
+          "name": "Baquba, Iraq",
+          "label": "Baqubah, Ba'quba Central Subdistrict, Ba'quba District, Diyala Governorate, 32010, Irak",
+          "lat": 33.7437267,
+          "lng": 44.6495225
+        },
+        {
+          "name": "Ctesiphon, Iraq",
+          "label": "Arch of Ctesiphon, Al Madain, Al-Mada'in Central Subdistrict, Al-Mada'in District, Baghdad Governorate, Irak",
+          "lat": 33.0937344,
+          "lng": 44.5807253
+        },
+        {
+          "name": "Baghdad, Iraq",
+          "label": "Bagdad, Al-Karkh Central Subdistrict, Al-Karkh District, Baghdad Governorate, Irak",
+          "lat": 33.3024309,
+          "lng": 44.3787992
+        },
+        {
+          "name": "Fallujah, Iraq",
+          "label": "Fallujah, Al-Falujah Central Subdistrict, Al-Falujah District, Al-Anbar Governorate, 31002, Irak",
+          "lat": 33.3532137,
+          "lng": 43.7875674
+        },
+        {
+          "name": "Samarra, Iraq",
+          "label": "Samarra, Samarra Central Subdistrict, Samarra District, Saladin Governorate, 34010, Irak",
+          "lat": 34.2,
+          "lng": 43.9
+        },
+        {
+          "name": "Erbil, Iraq",
+          "label": "Erbil, Erbil Central Subdistrict, Erbil District, Erbil Governorate, Iraqi Kurdistan, 44001, Irak",
+          "lat": 36.1911624,
+          "lng": 44.0094652
+        },
+        {
+          "name": "Mosul, Iraq",
+          "label": "Mosul, Hayy al-Auropa, Mosul, Mosul Central Subdistrict, Mosul District, Nineveh Governorate, Irak",
+          "lat": 36.343694049999996,
+          "lng": 43.099715597302286
+        },
+        {
+          "name": "Dura Europos, Syria",
+          "label": "Dura-Europos, Decumanus, Safsafah, Al-Jalaa Subdistrict, Abu Kamal District, Deir Ezzor Governorate, Syyria",
+          "lat": 34.747701,
+          "lng": 40.73046189834186
+        },
+        {
+          "name": "Raqqa, Syria",
+          "label": "Rakka, Raqqah Subdistrict, Raqqa District, Ar-Raqqah Governorate, Syyria",
+          "lat": 35.949678,
+          "lng": 39.0089212
+        },
+        {
+          "name": "Palmyra, Syria",
+          "label": "Palmyra, Transversalkolonnade, Hayy Al Qal'ah, Palmyra, Tadmur Subdistrict, Tadmur District, Homs Governorate, Syyria",
+          "lat": 34.5526608,
+          "lng": 38.259261004689264
+        },
+        {
+          "name": "Damascus, Syria",
+          "label": "Damaskos, Damascus Governorate, 2277, Syyria",
+          "lat": 33.5130695,
+          "lng": 36.3095814
+        },
+        {
+          "name": "Tyre, Lebanon",
+          "label": "Tyre, Tyre District, South Governorate, 1601, Libanon",
+          "lat": 33.2721211,
+          "lng": 35.1964023
+        },
+        {
+          "name": "Homs, Syria",
+          "label": "Homs, Homs Subdistrict, Homs District, Homs Governorate, 45151, Syyria",
+          "lat": 34.7333334,
+          "lng": 36.7166667
+        },
+        {
+          "name": "Tartus, Syria",
+          "label": "Tartus, Tartus Subdistrict, Tartus District, Tartus Governorate, 444, Syyria",
+          "lat": 34.8936225,
+          "lng": 35.885167
+        },
+        {
+          "name": "Aleppo, Syria",
+          "label": "Aleppo, Mount Simeon Subdistrict, Mount Simeon District, Aleppo Governorate, 4545, Syyria",
+          "lat": 36.19924,
+          "lng": 37.1637253
+        },
+
+        {
+          "name": "Adana, Turkey",
+          "label": "Adana, Karasoku Mahallesi, Seyhan, Adana, Mediterranean Region, 01010, Turkki",
+          "lat": 36.9863599,
+          "lng": 35.3252861
+        },
+        {
+          "name": "Konya, Turkey",
+          "label": "Konya, Selçuklu, Konya, Central Anatolia Region, 42200, Turkki",
+          "lat": 37.8768277,
+          "lng": 32.4874202
+        },
+        {
+          "name": "Antioch, Turkey",
+          "label": "Antiocheia in Psidia, 32-10, Yalvaç, Isparta, Mediterranean Region, 32400, Turkki",
+          "lat": 38.3041011,
+          "lng": 31.19059333763247
+        },
+        {
+          "name": "Izmir, Turkey",
+          "label": "Smyrna, Konak, Izmir, Aegean Region, 35180, Turkki",
+          "lat": 38.4147331,
+          "lng": 27.1434119
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "isHidden": false,
+      "name": "Central Asia",
+      "color": "#0f7e6c",
+      "cities": [
+        {
+          "name": "Nisa, Turkmenistan",
+          "label": "New Nisa, Nusaý köçesi, Bagyr, Büzmeýin etraby, Ašgabat, Turkmenistan",
+          "lat": 37.966634049999996,
+          "lng": 58.198267269433586
+        },
+        {
+          "name": "Merv, Turkmenistan",
+          "label": "Giaur Kala, Azady köçesi, Baýramaly, Mary Region, 746000, Turkmenistan",
+          "lat": 37.6604422,
+          "lng": 62.1913773
+        },
+        {
+          "name": "Urgench, Turkmenistan",
+          "label": "Konye-Urgench, Daşoguz Region, Turkmenistan",
+          "lat": 42.3261336,
+          "lng": 59.1530707
+        },
+        {
+          "name": "Amul, Turkmenistan",
+          "label": "TDTB TURKMEN AMUL Sahamcasy, Akdepe köçesi, Gagarin Etrapçasy, Turkmenabat, Lebap Region, 746100, Turkmenistan",
+          "lat": 39.09562685,
+          "lng": 63.5980852842142
+        },
+        {
+          "name": "Bukhara, Uzbekistan",
+          "label": "Bukhara, Buhara, Bukhara Region, 200100, Uzbekistan",
+          "lat": 39.7675529,
+          "lng": 64.4231326
+        },
+        {
+          "name": "Shahrisabz, Uzbekistan",
+          "label": "Shahrisabz, Shakhrisabz District, Qashqadaryo Region, 181302, Uzbekistan",
+          "lat": 39.056542,
+          "lng": 66.831527
+        },
+        {
+          "name": "Samarkand, Uzbekistan",
+          "label": "Samarkand, Samarqand Tumani, Samarqand Region, 140100, Uzbekistan",
+          "lat": 39.6550017,
+          "lng": 66.9756954
+        },
+        {
+          "name": "Istaravshan, Tajikistan",
+          "label": "Istarawshan, Istaravshan District, Sughd Region, 735610, Tadžikistan",
+          "lat": 39.9080152,
+          "lng": 68.9956351
+        },
+        {
+          "name": "Khujand, Fergana Valley, Tajikistan",
+          "label": "Khujand, Хуҷанд, Tajikistan",
+          "lat": 40.283276651706,
+          "lng": 69.64075391801927
+        },
+        {
+          "name": "Kokand, Fergana Valley, Uzbekistan",
+          "label": "Kokand, Danghara Tumani, Fergana Region, 150700, Uzbekistan",
+          "lat": 40.5361326,
+          "lng": 70.9278983
+        },
+        {
+          "name": "Andijon, Fergana Valley, Uzbekistan",
+          "label": "Katta Andijon Kanali, Fergana Region, 151205, Uzbekistan",
+          "lat": 40.6242385,
+          "lng": 71.5813898
+        },
+        {
+          "name": "Osh, Kyrgyzstan",
+          "label": "City of Osh, Kirgisia",
+          "lat": 40.5361899,
+          "lng": 72.8033618
+        },
+        {
+          "name": "Tashkent, Uzbekistan",
+          "label": "Taškent, 100128, Uzbekistan",
+          "lat": 41.3123363,
+          "lng": 69.2787079
+        },
+        {
+          "name": "Otrar, Kazakhstan",
+          "label": "Отрар, Otyrar District, Turkistan Region, Kazakstan",
+          "lat": 42.9082858,
+          "lng": 68.345325
+        },
+        {
+          "name": "Hazrat-e Turkestan, Kazakhstan",
+          "label": "Turkestan, Turkestan Қ.Ә., Turkistan Region, 161200, Kazakstan",
+          "lat": 43.298692,
+          "lng": 68.26296
+        },
+        {
+          "name": "Taraz, Kazakhstan",
+          "label": "Taraz, Тараз Г.А., Jambyl Region, 080000, Kazakstan",
+          "lat": 42.8938767,
+          "lng": 71.38414604321213
+        },
+        {
+          "name": "Ispidjab, Kazakhstan",
+          "label": "Zhikil', Жікіл, Kazakhstan ",
+          "lat": 42.85101876656084,
+          "lng": 71.4585562550667
+        },
+        {
+          "name": "Bishkek, Kyrgyzstan",
+          "label": "Biškek, Kirgisia",
+          "lat": 42.8765615,
+          "lng": 74.6070079
+        },
+        {
+          "name": "Tokmok, Kyrgyzstan",
+          "label": "Tokmok, Chuy Region, Kirgisia",
+          "lat": 42.8373462,
+          "lng": 75.2953881
+        },
+        {
+          "name": "Almaty, Kazakhstan",
+          "label": "Almaty, Kazakstan",
+          "lat": 43.2363924,
+          "lng": 76.9457275
+        },
+        {
+          "name": "Issyk kul, Kyrgyzstan",
+          "label": "Issyk Kul, Issyk-Kul Region, Kirgisia",
+          "lat": 42.46203985,
+          "lng": 77.07898624139989
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "isHidden": false,
+      "name": "Southern Routes and South Asia",
+      "color": "#a3252b",
+      "cities": [
+        {
+          "name": "Bactra, Afghanistan",
+          "label": "Balkh, بلخ, Afghanistan ",
+          "lat": 36.755159858985934,
+          "lng": 66.89742198608795
+        },
+        {
+          "name": "Herat, Afghanistan",
+          "label": "Herat, Herat Province, 3001, Afganistan",
+          "lat": 34.3508273,
+          "lng": 62.2164003
+        },
+        {
+          "name": "Alexandria Arachosia, Afghanistan",
+          "label": "Kandahar, کندهار, Afghanistan",
+          "lat": 31.62745428949055,
+          "lng": 65.73702714012673
+        },
+        {
+          "name": "Bamyan, Afghanistan",
+          "label": "Bamyan, Afganistan",
+          "lat": 34.75,
+          "lng": 67.25
+        },
+        {
+          "name": "Kabul, Afghanistan",
+          "label": "Kabul, Kabul Province, 10013, Afganistan",
+          "lat": 34.5260109,
+          "lng": 69.1776838
+        },
+        {
+          "name": "Purusapura, Pakistan",
+          "label": "Peshawar, Khyber Pakhtunkhwa, Pakistan ",
+          "lat": 34.015737909889204,
+          "lng": 71.52287874680279
+        },
+        {
+          "name": "Pushkalavati, Pakistan",
+          "label": "Peucelaotis, Tarnab Road, Charsadda, Khyber Pakhtunkhwa, 24000, Pakistan",
+          "lat": 34.1678804,
+          "lng": 71.737776
+        },
+        {
+          "name": "Takshashila, Pakistan",
+          "label": "Taxila, Rawalpindi District, Taxila Tehsil, Punjab, Pakistan",
+          "lat": 33.7474551,
+          "lng": 72.8073364
+        },
+        {
+          "name": "Leh, India",
+          "label": "Leh, Leh District, Ladakh, 0194101, Intia",
+          "lat": 34.1642029,
+          "lng": 77.5848133
+        },
+        {
+          "name": "Multan, Pakistan",
+          "label": "Multan, Punjab, 60000, Pakistan",
+          "lat": 30.1979793,
+          "lng": 71.4724978
+        },
+        {
+          "name": "Debal, Pakistan",
+          "label": "DEBAL FOODS, Naseem Nagar Road, Sheedi Goth, Qasimabad, Hyderabad, Sindh, 7100, Pakistan",
+          "lat": 25.392879,
+          "lng": 68.329269
+        },
+        {
+          "name": "Barbarikon, Pakistan",
+          "label": "Port near Karachi City, Sindh, Pakistan ",
+          "lat": 24.858012931069606,
+          "lng": 67.00035943781745
+        },
+        {
+          "name": "Bhambhore, Pakistan",
+          "label": "Bhambore, Thatta, Sindh, Pakistan ",
+          "lat": 24.75543634569256,
+          "lng": 67.52347530816759
+        },
+        {
+          "name": "Jaisalmer, India",
+          "label": "Jaisalmer, Rajasthan, Intia",
+          "lat": 27.02801615,
+          "lng": 70.7785056232077
+        },
+        {
+          "name": "Mathura, India",
+          "label": "Mathura, Uttar Pradesh, Intia",
+          "lat": 27.633333,
+          "lng": 77.583333
+        },
+        {
+          "name": "Varanasi, India",
+          "label": "Varanasi, Sadar, Varanasi, Uttar Pradesh, 221007, Intia",
+          "lat": 25.3356491,
+          "lng": 83.0076292
+        },
+        {
+          "name": "Kathmandu, Nepal",
+          "label": "Kathmandu, Kamaladi Marg, Kamalpokhari, Baghbazar, Kathmandu, Bagmati Pradesh, 46600, Nepal",
+          "lat": 27.708317,
+          "lng": 85.3205817
+        },
+        {
+          "name": "Bhitargarh, Bangladesh",
+          "label": "Bhitargarh, Panchagarh Sadar, Panchagarh District, Bangladesh",
+          "lat": 26.4434484,
+          "lng": 88.6126783
+        },
+        {
+          "name": "Paro, Bhutan",
+          "label": "Paro District, Bhutan",
+          "lat": 27.4646365,
+          "lng": 89.3183409
+        },
+        {
+          "name": "Jakar, Bhutan",
+          "label": "Jakar, Chhoekhor Gewog, Bhutan",
+          "lat": 27.553297,
+          "lng": 90.74770334014468
+        },
+        {
+          "name": "Somapura, Bangladesh",
+          "label": "Ruins of the Buddhist Vihara at Paharpur, Naogaon - Joypurhat Rd, Joypurhat, Naogaon District, Rajshahi Division, 6570, Bangladesh",
+          "lat": 25.031229449999998,
+          "lng": 88.97691013047816
+        },
+        {
+          "name": "Pundranagara, Bangladesh",
+          "label": "Pundranagara, Bangladesh",
+          "lat": 24.949515600924528,
+          "lng": 89.34806834635481
+        },
+        {
+          "name": "Wari-Bateshwar, Bangladesh",
+          "label": "Ruins of Wari-Bateshwar, Bangladesh",
+          "lat": 23.919267,
+          "lng": 90.717649
+        },
+        {
+          "name": "Dhaka, Bangladesh",
+          "label": "Dhaka, Chanpara Bazar, Dhaka District, Dhaka Division, 1230, Bangladesh",
+          "lat": 23.7861979,
+          "lng": 90.4026151
+        },
+        {
+          "name": "Sonargaon, Bangladesh",
+          "label": "Sonargaon, Narayangonj district, Dhaka Division, Bangladesh",
+          "lat": 23.6421599,
+          "lng": 90.6023361
+        },
+        {
+          "name": "Vikrampura, Bangladesh",
+          "label": "Vikrampura, Bangladesh",
+          "lat": 23.55,
+          "lng": 90.55
+        },
+        {
+          "name": "Mainamati, Bangladesh",
+          "label": "Mainamati, Cumilla, Cumilla District, Chattogram Division, 3501, Bangladesh",
+          "lat": 23.4800156,
+          "lng": 91.1169147
+        },
+        {
+          "name": "Chittagong, Bangladesh",
+          "label": "Chattogram, Chattogram District, Chattogram Division, 4000, Bangladesh",
+          "lat": 22.3364709,
+          "lng": 91.8260479
+        },
+        {
+          "name": "Tamralipta, India",
+          "label": "Tamralipta Mahavidyalaya, tamluk, Tamluk-Mecheda Road, Tamluk, Purba Medinipur, Länsi-Bengali, 721636, Intia",
+          "lat": 22.300680999999997,
+          "lng": 87.92589275987058
+        },
+        {
+          "name": "Pataliputra, India",
+          "label": "Pataliputra, Kolar taluk, Kolar district, Karnataka, Intia",
+          "lat": 13.2780619,
+          "lng": 78.0427444
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "isHidden": false,
+      "name": "China: The northern route along the Taklamakan Desert",
+      "color": "#5992a8",
+      "cities": [
+        {
+          "name": "Kashgar, China",
+          "label": "Kashgar Prefecture, Kashgar City, Kashgar Prefecture, Xinjiang, 844000, Kiina",
+          "lat": 39.4702177,
+          "lng": 75.9872411
+        },
+        {
+          "name": "Aksu, China",
+          "label": "Aksu Prefecture, Xinjiang, Kiina",
+          "lat": 41.1677575,
+          "lng": 80.2582136
+        },
+        {
+          "name": "Kucha, China",
+          "label": "Kuqa, Xinjiang, Kiina",
+          "lat": 41.7116961,
+          "lng": 82.9583247
+        },
+
+        {
+          "name": "Loulan, China",
+          "label": "Ruoqiang Loulan Airport, G315, Lopnur, Utam, Ruoqiang, Bayingolin Mongol Autonomous Prefecture, Xinjiang, Kiina",
+          "lat": 38.97304815,
+          "lng": 88.00915914930744
+        },
+        {
+          "name": "Korla, China",
+          "label": "Korla, Xincheng Subdistrict, Korla City, Bayingolin Mongol Autonomous Prefecture, Xinjiang, 841000, Kiina",
+          "lat": 41.7238743,
+          "lng": 86.173541
+        },
+        {
+          "name": "Karasahr, China",
+          "label": "Karasahr, China",
+          "lat": 42.058611,
+          "lng": 86.568333
+        },
+        {
+          "name": "Ürümqi, China",
+          "label": "Ürümqi County, Ürümqi, Xinjiang, 830000, Kiina",
+          "lat": 43.419754,
+          "lng": 87.319461
+        },
+        {
+          "name": "Turpan, China",
+          "label": "Turpan, Laocheng Subdistrict, Gaochang District, Turpan, Xinjiang, 838000, Kiina",
+          "lat": 42.9400252,
+          "lng": 89.1840477
+        },
+        {
+          "name": "Gaochang, China",
+          "label": "Gaochang, 2, Erbao, Gaochang District, Turpan, Xinjiang, Kiina",
+          "lat": 42.8548608,
+          "lng": 89.52853653214049
+        },
+        {
+          "name": "Kumul/Hami, China",
+          "label": "Yizhou District, Xinjiang, 650500, Kiina",
+          "lat": 42.359006,
+          "lng": 93.449334
+        },
+        {
+          "name": "Yumen Pass, China",
+          "label": "Yumen pass ticket office, Dunhuang City, Jiuquan, Gansu, 736200, Kiina",
+          "lat": 40.2709226,
+          "lng": 93.930674
+        },
+        {
+          "name": "Liqian, China",
+          "label": "Liqian, Yongchang County, Jinchang, Gansu, 737100, Kiina",
+          "lat": 38.1952366,
+          "lng": 101.8698004
+        },
+        {
+          "name": "Anxi, China",
+          "label": "Anxi, Quanzhou, Fujian, 362400, Kiina",
+          "lat": 25.0582843,
+          "lng": 118.1817065
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "isHidden": false,
+      "name": "China: The southern route along the Taklamakan Desert",
+      "color": "#2ba426",
+      "cities": [
+        {
+          "name": "Kashgar, China",
+          "label": "Kashgar Prefecture, Kashgar City, Kashgar Prefecture, Xinjiang, 844000, Kiina",
+          "lat": 39.4702177,
+          "lng": 75.9872411
+        },
+        {
+          "name": "Yarkand, China",
+          "label": "Yarkant, Yarkant County, Kashgar Prefecture, Xinjiang, Kiina",
+          "lat": 38.4170434,
+          "lng": 77.2411446
+        },
+        {
+          "name": "Pishan, China",
+          "label": "Pishan County, Hotan Prefecture, Xinjiang, Kiina",
+          "lat": 37.2435049,
+          "lng": 78.5941767
+        },
+        {
+          "name": "Khotan, China",
+          "label": "Aksu Prefecture, Xinjiang, Kiina",
+          "lat": 41.1677575,
+          "lng": 80.2582136
+        },
+        {
+          "name": "Niya, China",
+          "label": "Niye, Hotan Prefecture, Xinjiang, Kiina",
+          "lat": 37.0642231,
+          "lng": 82.693352
+        },
+        {
+          "name": "Endere, China",
+          "label": "Endere, China",
+          "lat": 37.6,
+          "lng": 83.8
+        },
+        {
+          "name": "Charchan, China",
+          "label": "Qarqan, Bayingolin Mongol Autonomous Prefecture, Xinjiang, Kiina",
+          "lat": 38.1353667,
+          "lng": 85.5296266
+        },
+        {
+          "name": "Waxxari, China",
+          "label": "Waxxari, Ruoqiang, Bayingolin Mongol Autonomous Prefecture, Xinjiang, Kiina",
+          "lat": 38.6847258,
+          "lng": 87.3302279
+        },
+        {
+          "name": "Ruoqiang Town, China",
+          "label": "Ruoqiang Town, China",
+          "lat": 39.018056,
+          "lng": 88.168056
+        },
+        {
+          "name": "Miran, China",
+          "label": "Miran Site, Fulou Line, Lopnur, Production and Construction Corps No. 36, Ruoqiang, Bayingolin Mongol Autonomous Prefecture, Xinjiang, Kiina",
+          "lat": 39.22681305,
+          "lng": 88.97056700571905
+        },
+        {
+          "name": "Yangguan, China",
+          "label": "Yangguan, Hejiang County, Luzhou City, Sichuan, Kiina",
+          "lat": 28.8701721,
+          "lng": 106.1582672
+        },
+        {
+          "name": "Mingfeng, China",
+          "label": "Mingfeng, Longzhou County, Chongzuo, Guangxi, Kiina",
+          "lat": 22.4518,
+          "lng": 107.099
+        },
+        {
+          "name": "Anxi, China",
+          "label": "Anxi, Quanzhou, Fujian, 362400, Kiina",
+          "lat": 25.0582843,
+          "lng": 118.1817065
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "isHidden": false,
+      "name": "China: From Anxi/Dunhuang to Chang'an (Xi'an)",
+      "color": "red",
+      "cities": [
+        {
+          "name": "Dunhuang, China",
+          "label": "Dunhuang, Dunhuang City, Jiuquan, Gansu, 736200, Kiina",
+          "lat": 40.1414182,
+          "lng": 94.6612931
+        },
+        {
+          "name": "Jiayuguan, China",
+          "label": "Jiayuguan, Gansu, 735 100, Kiina",
+          "lat": 39.7722294,
+          "lng": 98.2885388
+        },
+        {
+          "name": "Jiuquan, China",
+          "label": "Jiuquan, Xincheng Subdistrict, Suzhou District, Jiuquan, Gansu, 735000, Kiina",
+          "lat": 39.7321262,
+          "lng": 98.4936839
+        },
+        {
+          "name": "Zhangye, China",
+          "label": "Zhangye, Beijie Subdistrict, Ganzhou District, Zhangye, Gansu, 734000, Kiina",
+          "lat": 38.9365134,
+          "lng": 100.4556326
+        },
+        {
+          "name": "Shandan, China",
+          "label": "Shandan, Shandan County, Zhangye, Gansu, 734100, Kiina",
+          "lat": 38.7834379,
+          "lng": 101.0908113
+        },
+        {
+          "name": "Liangzhou, China",
+          "label": "Liangzhou, Wuwei, Gansu, Kiina",
+          "lat": 37.9285771,
+          "lng": 102.6403498
+        },
+        {
+          "name": "Tianzhu, Gansu, China",
+          "label": "Tianzhu / Bairi, Wuwei, Gansu, Kiina",
+          "lat": 36.9715475,
+          "lng": 103.1397181
+        },
+        {
+          "name": "Lanzhou, China",
+          "label": "Lanzhou, Chengguan District, Lanzhou, Gansu, 73000, Kiina",
+          "lat": 36.0620781,
+          "lng": 103.8318566
+        },
+        {
+          "name": "Tianshui, China",
+          "label": "Tianshui, Xiguan Subdistrict, Qinzhou District, Tianshui, Gansu, Kiina",
+          "lat": 34.5797531,
+          "lng": 105.7062921
+        },
+        {
+          "name": "Baoji, China",
+          "label": "Baoji, Jintai District, Baoji City, Shaanxi, Kiina",
+          "lat": 34.3645811,
+          "lng": 107.2332184
+        },
+        {
+          "name": "Chang'an (modern-day Xi'an)",
+          "label": "Xi’an, Xi'an, Shaanxi, 710018, Kiina",
+          "lat": 34.3430507,
+          "lng": 108.9350839
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "isHidden": false,
+      "name": "The eastern routes",
+      "color": "#d24fce",
+      "cities": [
+        {
+          "name": "Pyongyang, Korea",
+          "label": "Central Committee of the Workers' Party of Korea, Changgwang Street, Pjongjang, Pohjois-Korea",
+          "lat": 39.0175682,
+          "lng": 125.74453905937833
+        },
+        {
+          "name": "Gyeongju, Korea",
+          "label": "Gyeongju-si, Pohjois-Gyeongsang, Etelä-Korea",
+          "lat": 35.8556705,
+          "lng": 129.2248811
+        },
+        {
+          "name": "Busan, Korea",
+          "label": "Busan, Etelä-Korea",
+          "lat": 35.1799528,
+          "lng": 129.0752365
+        },
+        {
+          "name": "Seoul, Korea",
+          "label": "Soul, Nowon-gu, Etelä-Korea",
+          "lat": 37.5666791,
+          "lng": 126.9782914
+        },
+        {
+          "name": "Nara, Japan",
+          "label": "Nara Prefecture, Japani",
+          "lat": 34.2963089,
+          "lng": 135.8816819
+        },
+        {
+          "name": "Fukuoka, Japan",
+          "label": "Fukuoka Prefecture, Japani",
+          "lat": 33.6251241,
+          "lng": 130.6180016
+        },
+        {
+          "name": "Nagasaki, Japan",
+          "label": "Nagasaki Prefecture, Japani",
+          "lat": 33.1154683,
+          "lng": 129.7874339
+        },
+        {
+          "name": "Osaka, Japan",
+          "label": "Osakan prefektuuri, Japani",
+          "lat": 34.6198813,
+          "lng": 135.490357
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "isHidden": false,
+      "name": "Along the Indian Ocean trade routes",
+      "color": "#0c11d7",
+      "cities": [
+        {
+          "name": "Ulsan, Korea",
+          "label": "Ulsan, Etelä-Korea",
+          "lat": 35.5391697,
+          "lng": 129.3119136
+        },
+        {
+          "name": "Ningbo, China",
+          "label": "Ningbo, Zhejiang, Kiina",
+          "lat": 29.8622194,
+          "lng": 121.6203873
+        },
+        {
+          "name": "Fuzhou, China",
+          "label": "Fuzhou, Linchuan District, Fuzhou, Jiangxi, Kiina",
+          "lat": 27.9511188,
+          "lng": 116.3530413
+        },
+        {
+          "name": "Quanzhou, China",
+          "label": "Quanzhou, Fengze District, Quanzhou, Fujian, Kiina",
+          "lat": 24.8755492,
+          "lng": 118.6723605
+        },
+        {
+          "name": "Chittagong, Bangladesh",
+          "label": "Chattogram, Chattogram District, Chattogram Division, 4000, Bangladesh",
+          "lat": 22.3364709,
+          "lng": 91.8260479
+        },
+        {
+          "name": "Tamralipta, West Bengal, India",
+          "label": "Tamralipta Mahavidyalaya, tamluk, Tamluk-Mecheda Road, Tamluk, Purba Medinipur, Länsi-Bengali, 721636, Intia",
+          "lat": 22.300680999999997,
+          "lng": 87.92589275987058
+        },
+
+        {
+          "name": "Masulipatnam, India",
+          "label": "Masulipatnam, India",
+          "lat": 16.17,
+          "lng": 81.13
+        },
+        {
+          "name": "Madras, Tamil Nadu, India",
+          "label": "Chennai, Chennai District, Tamil Nadu, 600001, Intia",
+          "lat": 13.0836939,
+          "lng": 80.270186
+        },
+        {
+          "name": "Poompuhar, Tamil Nadu, India",
+          "label": "Poompuhar, Sirkali, Mayiladuthurai district, Tamil Nadu, 609105, Intia",
+          "lat": 11.1452914,
+          "lng": 79.8537308
+        },
+
+        {
+          "name": "Korkai, Tamil Nadu, India",
+          "label": "Korkai, Tamil Nadu, India",
+          "lat": 8.633333,
+          "lng": 78.066667
+        },
+        {
+          "name": "Colombo, Sri Lanka",
+          "label": "Colombo, Main Street, Gas Paha Junction, Fort, St. Bastian, Colombo, Colombo District, Western Province, 01100, Sri Lanka",
+          "lat": 6.9387469,
+          "lng": 79.8541134
+        },
+        {
+          "name": "Cochin, India",
+          "label": "Kochi, Ernakulam district, Kerala, 682005, Intia",
+          "lat": 9.931308,
+          "lng": 76.2674136
+        },
+        {
+          "name": "Muziris, Kerala, India",
+          "label": "Muziris, Chandapura - Kottapuram Bypass, Padakulam, Thiruvanchikulam, Kodungallur, Thrissur district, Kerala, 680664, Intia",
+          "lat": 10.22386305,
+          "lng": 76.1956596330431
+        },
+        {
+          "name": "Goa, India",
+          "label": "Goa, Intia",
+          "lat": 15.3503192,
+          "lng": 74.10178169795284
+        },
+        {
+          "name": "Mumbai, India",
+          "label": "Mumbai, Mumbai Metropolitan Region, Mumbai Suburban, Maharashtra, Intia",
+          "lat": 19.0759899,
+          "lng": 72.8773928
+        },
+        {
+          "name": "Lothal, India",
+          "label": "Lothal, SH1, Dholka Taluka, Ahmedabad District, Gujarat, 382230, Intia",
+          "lat": 22.522677,
+          "lng": 72.2493077
+        },
+        {
+          "name": "Banbhore, Pakistan",
+          "label": "Banbhore Fort, Bhanbor Rd, Sindh, Pakistan",
+          "lat": 24.7515646,
+          "lng": 67.5215019
+        },
+        {
+          "name": "Debal, Pakistan",
+          "label": "DEBAL FOODS, Naseem Nagar Road, Sheedi Goth, Qasimabad, Hyderabad, Sindh, 7100, Pakistan",
+          "lat": 25.392879,
+          "lng": 68.329269
+        },
+        {
+          "name": "Barbarikon, Pakistan",
+          "label": "Port near Karachi City, Sindh, Pakistan ",
+          "lat": 24.858012931069606,
+          "lng": 67.00035943781745
+        },
+
+        {
+          "name": "Muscat, Oman",
+          "label": "Masqat, Muscat, Oman",
+          "lat": 23.5882019,
+          "lng": 58.3829448
+        },
+
+        {
+          "name": "Bosaso, Somalia",
+          "label": "Bosaso, Bosaso District, Bari, +25290, Somalia",
+          "lat": 11.27848,
+          "lng": 49.179952
+        },
+        {
+          "name": "Aden, Yemen",
+          "label": "Aden, Aden Governorate, Jemen",
+          "lat": 12.789585,
+          "lng": 45.028504
+        },
+        {
+          "name": "Suez, Egypt",
+          "label": "Suez, Suez Governorate, 43515, Egypti",
+          "lat": 29.974498,
+          "lng": 32.537086
+        },
+        {
+          "name": "Derbent, Russia",
+          "label": "Derbent, urban okrug of Derbent, Republic of Dagestan, North Caucasian Federal District, +7 (87240) 4-59-4, Venäjä",
+          "lat": 42.057858,
+          "lng": 48.2887648
+        },
+        {
+          "name": "Astrakhan, Russia",
+          "label": "Astrahan, Astrakhan, Astrahanin alue, Southern Federal District, 414000, Venäjä",
+          "lat": 46.3498308,
+          "lng": 48.0326203
+        },
+        {
+          "name": "Sudak, Ukraine",
+          "label": "Sudak, Sudak municipality, Ukraina",
+          "lat": 44.8488369,
+          "lng": 34.971099
+        },
+
+        {
+          "name": "Ayas, Turkey",
+          "label": "Ayaş, Ankara, Central Anatolia Region, 06730, Turkki",
+          "lat": 40.02804515,
+          "lng": 32.26187812656677
+        },
+        {
+          "name": "Rome, Italy",
+          "label": "Rooma, Roma Capitale, Lazio, Italia",
+          "lat": 41.8933203,
+          "lng": 12.4829321
+        },
+        {
+          "name": "Venice, Italy",
+          "label": "Venetsia, Venezia, Veneto, Italia",
+          "lat": 45.4371908,
+          "lng": 12.3345898
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "isHidden": false,
+      "name": "In Southeast Asia",
+      "color": "#7fa944",
+      "cities": [
+        {
+          "name": "Muziris, India",
+          "label": "Muziris, Chandapura - Kottapuram Bypass, Padakulam, Thiruvanchikulam, Kodungallur, Thrissur district, Kerala, 680664, Intia",
+          "lat": 10.22386305,
+          "lng": 76.1956596330431
+        },
+        {
+          "name": "Perlak, Indonesia",
+          "label": "Perlak, Padang Tiji, Pidie, Aceh, Indonesia",
+          "lat": 5.303005,
+          "lng": 95.8110767
+        },
+        {
+          "name": "Malacca",
+          "label": "Malakka, Malesia",
+          "lat": 2.3293744,
+          "lng": 102.2880962
+        },
+        {
+          "name": "Kedah, Asia",
+          "label": "Redline Asia Auto Services, Jalan Tunku Abdul Rahman Putra, Taman Tenaga Nasional, Kampung Mempelam, Alor Setar, Kota Setar, Kedah, 05150, Malesia",
+          "lat": 6.1309981,
+          "lng": 100.3470531
+        },
+        {
+          "name": "Ligor, Asia",
+          "label": "Ligor, Asia",
+          "lat": 8.436389,
+          "lng": 99.963056
+        },
+        {
+          "name": "Hoi An, Vietnam",
+          "label": "Hoi An, Chợ Mới District, An Giang Province, Vietnam",
+          "lat": 10.433854,
+          "lng": 105.5499269
+        },
+        {
+          "name": "Vijaya, Champa",
+          "label": "Vijaya (Champa)",
+          "lat": 13.92869,
+          "lng": 109.07507
+        },
+        {
+          "name": "Bolinao, Pangasinan, Philippines",
+          "label": "Bolinao, Pangasinan, Ilocos Region, 2406, Filippiinit",
+          "lat": 16.3856951,
+          "lng": 119.8945179
+        },
+        {
+          "name": "Hanoi, Vietnam",
+          "label": "Hanoi, Vietnam",
+          "lat": 21.0294498,
+          "lng": 105.8544441
+        }
+      ]
+    }
+  ]
+}
