@@ -1,4 +1,4 @@
-# FisuJS
+# WebGIS Silkroad
 
 Web app for showing cities along the silkroad and their hotels.
 

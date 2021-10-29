@@ -8,6 +8,18 @@
           :dark="isDarkMode"
           style="padding:30px"
         >
+          <p>
+            Web app for showing cities along the silkroad, along with some hotel
+            locations close to the cities
+          </p>
+          <v-btn
+            text
+            outlined
+            href="https://github.com/purkkilo/WebGIS-Silkroad"
+            target="_blank"
+          >
+            <v-icon>mdi-github</v-icon> Github
+          </v-btn>
           <l-map
             :zoom="zoom"
             :center="center"
