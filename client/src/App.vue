@@ -51,15 +51,12 @@
 </template>
 
 <script>
-import Map from "./components/Map";
-import Footer from "./components/Footer";
-
 export default {
   name: "App",
 
   components: {
-    Map,
-    Footer,
+    Map: () => import("./components/Map"),
+    Footer: () => import("./components/Footer"),
   },
   data: () => ({
     //
@@ -82,7 +79,7 @@ export default {
 body {
   display: flex;
   flex-direction: column;
-  background: url("./assets/silkroad.jpg");
+  background: url("https://images.unsplash.com/photo-1512036849132-48508f294900?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

@@ -864,6 +864,12 @@
           "lng": 125.74453905937833
         },
         {
+          "name": "Seoul, Korea",
+          "label": "Soul, Nowon-gu, Etelä-Korea",
+          "lat": 37.5666791,
+          "lng": 126.9782914
+        },
+        {
           "name": "Gyeongju, Korea",
           "label": "Gyeongju-si, Pohjois-Gyeongsang, Etelä-Korea",
           "lat": 35.8556705,
@@ -875,17 +881,12 @@
           "lat": 35.1799528,
           "lng": 129.0752365
         },
+
         {
-          "name": "Seoul, Korea",
-          "label": "Soul, Nowon-gu, Etelä-Korea",
-          "lat": 37.5666791,
-          "lng": 126.9782914
-        },
-        {
-          "name": "Nara, Japan",
-          "label": "Nara Prefecture, Japani",
-          "lat": 34.2963089,
-          "lng": 135.8816819
+          "name": "Nagasaki, Japan",
+          "label": "Nagasaki Prefecture, Japani",
+          "lat": 33.1154683,
+          "lng": 129.7874339
         },
         {
           "name": "Fukuoka, Japan",
@@ -894,16 +895,16 @@
           "lng": 130.6180016
         },
         {
-          "name": "Nagasaki, Japan",
-          "label": "Nagasaki Prefecture, Japani",
-          "lat": 33.1154683,
-          "lng": 129.7874339
-        },
-        {
           "name": "Osaka, Japan",
           "label": "Osakan prefektuuri, Japani",
           "lat": 34.6198813,
           "lng": 135.490357
+        },
+        {
+          "name": "Nara, Japan",
+          "label": "Nara Prefecture, Japani",
+          "lat": 34.2963089,
+          "lng": 135.8816819
         }
       ]
     },

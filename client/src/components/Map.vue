@@ -7,6 +7,7 @@
           elevation="20"
           :dark="isDarkMode"
           style="padding:30px"
+          v-if="roads && hotels"
         >
           <p>
             Web app for showing cities along the silkroad, along with some hotel
@@ -150,7 +151,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-card :dark="isDarkMode" elevation="20">
+        <v-card :dark="isDarkMode" elevation="20" v-if="roads">
           <v-card-title>Roads</v-card-title>
           <v-data-table
             :headers="roadHeaders"
@@ -184,6 +185,7 @@
             sort-by="id"
             class="elevation-20"
             :search="search"
+            :loading="!roads || !hotels"
           >
             <template v-slot:top>
               <v-col>
@@ -205,6 +207,69 @@
                 @click="focusOnCity(item.id)"
                 ><v-icon>mdi-map-search</v-icon>Focus</v-btn
               >
+            </template>
+            <template v-slot:[`item.viewed`]="{ item }">
+              <v-btn
+                rounded
+                outlined
+                small
+                color="blue lighten-2"
+                @click="viewCityData(item.id)"
+                ><v-icon>mdi-text-box-search-outline</v-icon>View</v-btn
+              >
+              <v-dialog v-model="dialog_city[item.id]" max-width="600">
+                <v-card :dark="isDarkMode">
+                  <v-card-title
+                    class=""
+                    v-bind:class="{
+                      'text-h5 grey darken-3': isDarkMode,
+                      'text-h5 grey lighten-2': !isDarkMode,
+                    }"
+                  >
+                    {{ item.name }}
+                  </v-card-title>
+
+                  <v-card-text>
+                    <v-list>
+                      <v-list-item>
+                        <v-list-item-icon>
+                          <v-icon color="grey darken-2"
+                            >mdi-road-variant</v-icon
+                          >
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                          <v-list-item-title>{{ item.road }}</v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-icon>
+                          <v-icon color="grey darken-2"
+                            >mdi-crosshairs-gps</v-icon
+                          >
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                          <v-list-item-title>{{
+                            item.latlng
+                          }}</v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
+                  </v-card-text>
+
+                  <v-divider></v-divider>
+
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                      color="primary"
+                      text
+                      @click="$set(dialog_city, item.id, false)"
+                    >
+                      Close
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-dialog>
             </template>
           </v-data-table>
         </v-card>
@@ -231,35 +296,32 @@
 
 <script>
 import L from "leaflet";
-import { LMap, LTileLayer } from "vue2-leaflet";
-import cityData from "../data/data.json";
-import hotels from "../data/hotels.json";
 import "leaflet.awesome-markers";
+//import { LMap, LTileLayer } from "vue2-leaflet";
 //import { OpenStreetMapProvider } from "leaflet-geosearch";   // Used in getting city coordinates
 //import { Loader } from "@googlemaps/js-api-loader";          // Used in getting hotels from given city
 
 export default {
   name: "Map",
-  components: {
-    LMap,
-    LTileLayer,
-  },
+  components: {},
   props: ["isDarkMode"],
   data() {
     return {
-      zoom: 2,
-      center: L.latLng(32.54681317351517, 67.7821466853562),
+      zoom: 3,
+      center: L.latLng(30.751277776257812, 74.61914062500001),
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      currentZoom: 2,
-      currentCenter: L.latLng(32.54681317351517, 67.7821466853562),
-      showParagraph: false,
+      currentZoom: 3,
+      currentCenter: L.latLng(30.751277776257812, 74.61914062500001),
       mapOptions: {
         zoomSnap: 0.5,
       },
+      showCityInfo: false,
+      dialog_city: {},
       map: null,
-      roads: cityData.roads,
+      roads: null,
+      hotels: null,
       //provider: new OpenStreetMapProvider({ language: "en" }),
       cityMarkers: [],
       hotelMarkers: [],
@@ -275,11 +337,17 @@ export default {
           value: "name",
           align: "start",
         },
-        { text: "Road", value: "road", align: "right" },
+        { text: "Road", value: "road", align: "center" },
         {
           text: "Focus on map",
           value: "selected",
-          align: "right",
+          align: "center",
+          sortable: false,
+        },
+        {
+          text: "View info",
+          value: "viewed",
+          align: "center",
           sortable: false,
         },
       ],
@@ -289,11 +357,11 @@ export default {
           value: "name",
           align: "start",
         },
-        { text: "Cities", value: "cities.length", align: "right" },
+        { text: "Cities", value: "cities.length", align: "center" },
         {
           text: "Show/Hide",
           value: "isHidden",
-          align: "right",
+          align: "center",
           sortable: false,
         },
       ],
@@ -301,7 +369,6 @@ export default {
       markersHidden: false,
       hotelMarkersHidden: false,
       google: null,
-      hotels: hotels.cities,
       hotelData: {
         cities: [],
       },
@@ -310,6 +377,13 @@ export default {
   },
   mounted() {
     document.title = "WebGIS silkroad";
+    // Just wanted to test importing modules dynamically
+    import("../data/data.json").then((module) => {
+      this.roads = module.roads;
+    });
+    import("../data/hotels.json").then((module) => {
+      this.hotels = module.cities;
+    });
     /* Used to fetch hotels from google places api, data cached to /data/hotels.json
       this.google = new Loader({
         apiKey: <Apikey>,
@@ -348,7 +422,7 @@ export default {
             : ++this.cityCount;
 
           // Add marker for city
-          this.addCity([city.lat, city.lng], city.name, road.name, null);
+          this.addCity(city, road.name);
           // Add point for polyline
           this.pointList.push([city.lat, city.lng]);
           // Show hotels located in the city
@@ -359,22 +433,23 @@ export default {
       });
     },
     // Add city to array and add marker to it's place on the map
-    addCity(coords, city, road) {
+    addCity(city, road) {
       let id = this.cities.length
         ? this.cities[this.cities.length - 1].id + 1
         : 0; // Id for city to find them from the array
       // Add city to array for data-table
       this.cities.push({
         id: id,
-        name: city,
-        lat: coords[0],
-        lng: coords[1],
-        latlng: `${coords[0]}, ${coords[1]}`,
+        name: city.name,
+        lat: city.lat,
+        lng: city.lng,
+        latlng: `${city.lat}, ${city.lng}`,
         road: road,
         selected: false,
+        viewed: false,
       });
       // Place marker
-      this.addMarker(coords, city, false);
+      this.addMarker([city.lat, city.lng], city.name, null);
     },
     // Add marker for city/hotel
     addMarker(coords, label, isHotel) {
@@ -508,15 +583,30 @@ export default {
         this.markersHidden = !this.markersHidden;
       }
     },
-    // Zoom in on the city on the map
-    focusOnCity(cityId) {
+    findCityFromArray(cityId) {
       let index = this.cities.findIndex((c) => c.id === cityId);
       if (index > -1) {
-        const city = this.cities[index];
+        return this.cities[index];
+      } else {
+        return null;
+      }
+    },
+    // Zoom in on the city on the map
+    focusOnCity(cityId) {
+      const city = this.findCityFromArray(cityId);
+      if (city) {
         // Go to the map on the UI
         this.$vuetify.goTo("#myMap");
         // Zoom the map into the city
         this.map.flyTo([city.lat, city.lng], 14);
+      }
+    },
+    // Show all of city's data
+    viewCityData(cityId) {
+      const city = this.findCityFromArray(cityId);
+      if (city) {
+        this.$set(this.dialog_city, cityId, true);
+        this.showCityInfo = true;
       }
     },
     // Add hotels to the map
