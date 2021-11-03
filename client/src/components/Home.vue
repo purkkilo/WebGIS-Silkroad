@@ -7,7 +7,6 @@
           elevation="20"
           :dark="isDarkMode"
           style="padding:30px"
-          v-if="roads && hotels"
         >
           <p>
             Web app for showing cities along the silkroad, along with some hotel
@@ -45,7 +44,10 @@
                   <v-icon>mdi-mouse-move-vertical</v-icon> Mouse position:
                   {{ mousePosition }}<br />
                   <v-icon>mdi-magnify-plus-outline</v-icon> Zoom:
-                  {{ currentZoom }}
+                  {{ currentZoom }}<br />
+                  Zoom by: Double clicking left mouse button, Shift + Draw area
+                  while holding left mouse button, Mousewheel, Zoom icons on the
+                  map
                 </span>
               </v-card-subtitle>
             </v-col>
@@ -100,7 +102,7 @@
                   rounded
                   outlined
                   color="blue darken-2"
-                  @click="map.flyTo([32.54681317351517, 67.7821466853562], 2)"
+                  @click="map.flyTo([26.93514153043711, 73.7505164869342], 3.5)"
                   ><v-icon color="green">mdi-restart</v-icon>Reset map</v-btn
                 >
               </v-col>
@@ -151,7 +153,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-card :dark="isDarkMode" elevation="20" v-if="roads">
+        <v-card :dark="isDarkMode" elevation="20">
           <v-card-title>Roads</v-card-title>
           <v-data-table
             :headers="roadHeaders"
@@ -185,7 +187,6 @@
             sort-by="id"
             class="elevation-20"
             :search="search"
-            :loading="!roads || !hotels"
           >
             <template v-slot:top>
               <v-col>
@@ -297,31 +298,33 @@
 <script>
 import L from "leaflet";
 import "leaflet.awesome-markers";
+import data from "../data/data.json";
+import hotelData from "../data/hotels.json";
 //import { LMap, LTileLayer } from "vue2-leaflet";
 //import { OpenStreetMapProvider } from "leaflet-geosearch";   // Used in getting city coordinates
 //import { Loader } from "@googlemaps/js-api-loader";          // Used in getting hotels from given city
 
 export default {
-  name: "Map",
+  name: "Home",
   components: {},
   props: ["isDarkMode"],
   data() {
     return {
-      zoom: 3,
-      center: L.latLng(30.751277776257812, 74.61914062500001),
+      zoom: 3.5,
+      currentZoom: 3.5,
+      center: L.latLng(26.93514153043711, 73.7505164869342),
+      currentCenter: L.latLng(26.93514153043711, 73.7505164869342),
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      currentZoom: 3,
-      currentCenter: L.latLng(30.751277776257812, 74.61914062500001),
       mapOptions: {
         zoomSnap: 0.5,
       },
       showCityInfo: false,
       dialog_city: {},
       map: null,
-      roads: null,
-      hotels: null,
+      roads: data.roads,
+      hotels: hotelData.cities,
       //provider: new OpenStreetMapProvider({ language: "en" }),
       cityMarkers: [],
       hotelMarkers: [],
@@ -376,14 +379,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "WebGIS silkroad";
-    // Just wanted to test importing modules dynamically
-    import("../data/data.json").then((module) => {
-      this.roads = module.roads;
-    });
-    import("../data/hotels.json").then((module) => {
-      this.hotels = module.cities;
-    });
+    document.title = "WebGIS Silkroad";
     /* Used to fetch hotels from google places api, data cached to /data/hotels.json
       this.google = new Loader({
         apiKey: <Apikey>,

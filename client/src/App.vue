@@ -6,8 +6,8 @@
     <v-app-bar
       app
       v-bind:class="{
-        'grey darken-4': switchMe,
-        primary: !switchMe,
+        'grey darken-4': isDarkMode,
+        primary: !isDarkMode,
       }"
       dark
     >
@@ -19,7 +19,7 @@
         rounded
         outlined
         text
-        :dark="switchMe"
+        :dark="isDarkMode"
         @click="$vuetify.goTo('#myMap')"
         >Map<v-icon>mdi-arrow-up-circle-outline</v-icon></v-btn
       >
@@ -27,16 +27,16 @@
         rounded
         outlined
         text
-        :dark="switchMe"
+        :dark="isDarkMode"
         @click="$vuetify.goTo('#cities')"
         ><v-icon>mdi-arrow-down-circle-outline</v-icon>Tables</v-btn
       >
       <v-spacer></v-spacer>
       <div class="d-flex align-center">
-        <v-switch v-model="switchMe">
+        <v-switch v-model="isDarkMode">
           <template v-slot:label>
-            {{ switchMe ? "Dark Mode" : "Light Mode" }}
-            <v-icon v-if="switchMe" color="yellow">mdi-weather-night</v-icon>
+            {{ isDarkMode ? "Dark Mode" : "Light Mode" }}
+            <v-icon v-if="isDarkMode" color="yellow">mdi-weather-night</v-icon>
             <v-icon v-else color="yellow">mdi-weather-sunny</v-icon>
           </template>
         </v-switch>
@@ -44,23 +44,42 @@
     </v-app-bar>
 
     <v-main>
-      <Map v-bind:isDarkMode="switchMe" />
+      <Home v-bind:isDarkMode="isDarkMode" />
     </v-main>
-    <Footer v-bind:isDarkMode="switchMe" />
+    <Footer v-bind:isDarkMode="isDarkMode" />
   </v-app>
 </template>
 
 <script>
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+
 export default {
   name: "App",
 
   components: {
-    Map: () => import("./components/Map"),
-    Footer: () => import("./components/Footer"),
+    Home,
+    Footer,
+  },
+  mounted() {
+    const preferences = localStorage.getItem("preferences");
+    if (preferences) {
+      this.isDarkMode = JSON.parse(preferences).isDarkMode;
+    } else {
+      localStorage.setItem(
+        "preferences",
+        JSON.stringify({ isDarkMode: this.isDarkMode })
+      );
+    }
+  },
+  watch: {
+    isDarkMode(val) {
+      localStorage.setItem("preferences", JSON.stringify({ isDarkMode: val }));
+    },
   },
   data: () => ({
     //
-    switchMe: true,
+    isDarkMode: true,
   }),
 };
 </script>
