@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "dev": "nodemon server/index.js",
+    "build-app": "cd client && npm run build",
+    "postinstall": "cd client && npm install && npm run build"
   },
   "author": "Jori Kosonen",
   "license": "ISC",
