@@ -23,13 +23,11 @@ Web app for viewign cities along the silkroad. Made for university's GIS (Geogra
 
 ## **Installation**
 
-1. **cd client** (Move to client folder)
-2. **npm install**
-3. **npm run serve** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
+1. **npm install** # Installs both server and client dependencies
 
 ## **Usage**
 
 1. **cd client** (Move to client folder)
-2. **npm run serve** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
+2. **npm run dev** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
 
-### Express server (**/server** folder) only for hosting site to use
+### Express server only for hosting purposes
