@@ -1,7 +1,6 @@
-# **WebGIS Silkroad (upgraded to Vue 3 in 2026)**
+# **WebGIS Silkroad**
 
-Web app for viewing cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com).
-Web app for viewign cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com). Recently upgraded the project from Vue 2 to Vue 3.
+Web app for viewing cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com). Recently upgraded the project from Vue 2 to Vue 3 in 2026 with some performance improvements.
 
 <p align="center">
 <img src="./images/mapview.png"
