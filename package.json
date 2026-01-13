@@ -1,23 +1,24 @@
 {
-  "name": "server",
+  "name": "vue3-webgis-silkroad",
   "version": "1.0.0",
-  "description": "server for heroku",
+  "description": "vue3-webgis-silkroad",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "start": "node client/dist/index.js",
+    "dev": "nodemon client/dist/index.js",
+    "dev-ui": "cd client && npm run dev",
     "build-app": "cd client && npm run build",
     "postinstall": "cd client && npm install && npm run build"
   },
   "author": "Jori Kosonen",
   "license": "ISC",
   "dependencies": {
-    "connect-history-api-fallback": "^2.0.0",
     "cors": "^2.8.5",
-    "express": "^4.21.1"
+    "express": "^5.2.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.11"
   }
 }

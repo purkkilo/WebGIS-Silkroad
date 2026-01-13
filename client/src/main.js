@@ -1,25 +1,28 @@
-import Vue from "vue";
-import App from "./App.vue";
-import vuetify from "./plugins/vuetify";
-import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
-import "leaflet/dist/leaflet.css";
-import "leaflet-geosearch/dist/geosearch.css";
-import "leaflet.awesome-markers/dist/leaflet.awesome-markers.css";
-import { Icon } from "leaflet";
+import { createApp } from 'vue'
+import App from './App.vue'
 
-delete Icon.Default.prototype._getIconUrl;
-Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-});
+// Vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+//import 'unfonts.css'
+import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
+import '@mdi/font/css/materialdesignicons.css'
 
-Vue.component("l-map", LMap);
-Vue.component("l-tile-layer", LTileLayer);
-Vue.component("l-marker", LMarker);
+const vuetify = createVuetify({
+  components,
+  directives,
+  icons: {
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    },
+  },
+  theme: {
+    defaultTheme: 'dark', // 'light' | 'dark' | 'system'
+  },
+})
 
-Vue.config.productionTip = false;
-new Vue({
-  vuetify,
-  render: (h) => h(App),
-}).$mount("#app");
+createApp(App).use(vuetify).mount('#app')

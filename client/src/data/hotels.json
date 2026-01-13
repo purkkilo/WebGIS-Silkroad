@@ -61,9 +61,7 @@
     },
     {
       "name": "Paro, Bhutan",
-      "hotels": [
-        { "name": "Bhutan Monestry", "lat": 27.4801773, "lng": 89.3277104 }
-      ]
+      "hotels": [{ "name": "Bhutan Monestry", "lat": 27.4801773, "lng": 89.3277104 }]
     },
     {
       "name": "Beypazarı, Turkey",
@@ -2169,9 +2167,7 @@
     },
     {
       "name": "Qumis, Iran",
-      "hotels": [
-        { "name": "Qumis", "lat": 35.95105599999999, "lng": 54.03749999999999 }
-      ]
+      "hotels": [{ "name": "Qumis", "lat": 35.95105599999999, "lng": 54.03749999999999 }]
     },
     {
       "name": "Sabzevar, Iran",

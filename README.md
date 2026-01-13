@@ -1,6 +1,6 @@
-# **WebGIS Silkroad**
+# **WebGIS Silkroad (upgraded to Vue 3 in 2026)**
 
-Web app for viewign cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com).
+Web app for viewign cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com). Recently upgraded the project from Vue 2 to Vue 3.
 
 <p align="center">
 <img src="./images/mapview.png"
@@ -10,9 +10,8 @@ Web app for viewign cities along the silkroad. Made for university's GIS (Geogra
 
 ## **Project setup**
 
-- **User interface** with [Vue](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/en/) using [Vue CLI](https://cli.vuejs.org/)
-- **Interactive map** with [Leaflet](https://leafletjs.com/), [vue2-leaflet](https://vue2-leaflet.netlify.app/) and OpenStreetMap's [Standard tile layer](https://wiki.openstreetmap.org/wiki/Standard_tile_layer)
-- **Custom markers** with [Leaflet.awesome-markers](https://github.com/lennardv2/Leaflet.awesome-markers)
+- **User interface** with [Vue 3](https://vuejs.org/), built with [Vite](https://vite.dev/) and using [Vuetify](https://vuetifyjs.com/en/)
+- **Interactive map** with [Leaflet](https://leafletjs.com/) and OpenStreetMap's [Standard tile layer](https://wiki.openstreetmap.org/wiki/Standard_tile_layer)
 
 ## **Data source**
 
@@ -32,4 +31,4 @@ Web app for viewign cities along the silkroad. Made for university's GIS (Geogra
 1. **cd client** (Move to client folder)
 2. **npm run serve** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
 
-### Express server (**/server** folder) only for heroku to use, not needed to run this project
+### Express server (**/server** folder) only for hosting site to use
