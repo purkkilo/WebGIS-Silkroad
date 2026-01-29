@@ -46,7 +46,8 @@ const props = defineProps({
 })
 const isDarkMode = props.isDarkMode
 // sort state
-const sortBy = ref([{ key: 'id', order: 'asc' }])
+const sortRoadsBy = ref([{ key: 'id', order: 'asc' }])
+const sortCitiesBy = ref([{ key: 'name', order: 'asc' }])
 // map / UI state
 const zoom = ref(3.5)
 const currentZoom = ref(3.5)
@@ -336,7 +337,7 @@ function download(content, fileName, contentType, stringify) {
     <v-row>
       <v-col>
         <v-card id="myMap" elevation="20" style="padding: 30px">
-          <p style="text-align: center">
+          <p style="text-align: center; font-size: 18px; font-weight: bold">
             Web app for showing cities along the silkroad, along with some hotel locations close to
             the cities
           </p>
@@ -394,7 +395,7 @@ function download(content, fileName, contentType, stringify) {
           </v-row>
 
           <v-card-actions>
-            <v-row>
+            <v-row style="padding: 10px">
               <v-col>
                 <v-btn rounded variant="tonal" color="blue" @click="toggleMarkers(false)">
                   <v-icon v-if="markersHidden" :icon="mdiEye"></v-icon>
@@ -421,9 +422,6 @@ function download(content, fileName, contentType, stringify) {
                   <v-icon color="green" :icon="mdiRestart"></v-icon>Reset map
                 </v-btn>
               </v-col>
-            </v-row>
-
-            <v-row>
               <v-col>
                 <v-btn
                   text
@@ -463,14 +461,14 @@ function download(content, fileName, contentType, stringify) {
             :headers="roadHeaders"
             :items="roads"
             item-key="id"
-            v-model:sort-by="sortBy"
+            :sort-by="sortRoadsBy"
+            @update:sort-by="sortRoadsBy = $event"
             class="elevation-20"
           >
             <template v-slot:[`item.isHidden`]="{ item }">
               <v-btn rounded variant="tonal" small :color="item.color" @click="toggleLine(item.id)">
                 <v-icon v-if="item.isHidden" :icon="mdiEye"></v-icon>
                 <v-icon v-else :icon="mdiEyeOff"></v-icon>
-                {{ item.isHidden ? 'Show' : 'Hide' }}
               </v-btn>
             </template>
           </v-data-table>
@@ -484,7 +482,8 @@ function download(content, fileName, contentType, stringify) {
             :headers="headers"
             :items="cities"
             item-key="id"
-            v-model:sort-by="sortBy"
+            :sort-by="sortCitiesBy"
+            @update:sort-by="sortCitiesBy = $event"
             class="elevation-20"
             :search="search"
           >
@@ -502,7 +501,7 @@ function download(content, fileName, contentType, stringify) {
 
             <template v-slot:[`item.selected`]="{ item }">
               <v-btn rounded variant="tonal" small color="blue" @click="focusOnCity(item.id)">
-                <v-icon :icon="mdiMapSearch"></v-icon>Focus
+                <v-icon :icon="mdiMapSearch"></v-icon>
               </v-btn>
             </template>
 
@@ -514,7 +513,7 @@ function download(content, fileName, contentType, stringify) {
                 color="blue lighten-2"
                 @click="viewCityData(item.id)"
               >
-                <v-icon :icon="mdiTextBoxSearchOutline"></v-icon>View
+                <v-icon :icon="mdiTextBoxSearchOutline"></v-icon>
               </v-btn>
 
               <v-dialog v-model="dialogCity[item.id]" max-width="600">

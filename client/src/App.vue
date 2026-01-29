@@ -63,16 +63,16 @@ watch(isDarkMode, (newVal) => {
           <template v-slot:label>
             {{ isDarkMode ? 'Dark Mode' : 'Light Mode' }}
             <v-icon v-if="isDarkMode" color="yellow" :icon="mdiWeatherNight"></v-icon>
-            <v-icon v-else color="yellow" :icon="mdiWeatherSunny"></v-icon>
+            <v-icon v-else color="blue" :icon="mdiWeatherSunny"></v-icon>
           </template>
         </v-switch>
       </div>
     </v-app-bar>
 
     <v-main>
-      <app-home v-bind:isDarkMode="isDarkMode" />
+      <app-home />
     </v-main>
-    <app-footer v-bind:isDarkMode="isDarkMode" />
+    <app-footer />
   </v-app>
 </template>
 
