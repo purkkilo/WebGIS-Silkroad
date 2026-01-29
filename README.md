@@ -1,7 +1,6 @@
-# **WebGIS Silkroad (upgraded to Vue 3 in 2026)**
+# **WebGIS Silkroad**
 
-Web app for viewing cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com).
-Web app for viewign cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com). Recently upgraded the project from Vue 2 to Vue 3.
+Web app for viewing cities along the silkroad. Made for university's GIS (Geographic Information Systems) course. From the map you can find their coordinates, and 3 of the closest hotels for most of the cities. Roads are only connected by straight lines, so they are not geographically accurate, but city coordinates and hotel locations should be. You can find the demo running [Here](https://webgis-silkroad.onrender.com). Recently upgraded the project from Vue 2 to Vue 3 in 2026 with some performance improvements.
 
 <p align="center">
 <img src="./images/mapview.png"
@@ -23,13 +22,11 @@ Web app for viewign cities along the silkroad. Made for university's GIS (Geogra
 
 ## **Installation**
 
-1. **cd client** (Move to client folder)
-2. **npm install**
-3. **npm run serve** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
+1. **npm install** # Installs both server and client dependencies
 
 ## **Usage**
 
 1. **cd client** (Move to client folder)
-2. **npm run serve** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
+2. **npm run dev** (starts the application server. **[See Here](https://github.com/purkkilo/WebGIS-Silkroad/blob/master/client/README.md)** for more info)
 
-### Express server (**/server** folder) only for hosting site to use
+### Express server only for hosting purposes
